@@ -8,6 +8,10 @@
     <button @click="goToFlux" class="custom-button">
       Go to Simple SSE Flux
     </button>
+
+    <button @click="goToInteractiveSse" class="custom-button">
+      Go to Simple Interactive Sse
+    </button>
   </div>
 </template>
 
@@ -19,6 +23,9 @@ export default {
     },
     goToFlux() {
       this.$router.push('/simple_flux'); // 跳转到 flux.vue 页面
+    },
+    goToInteractiveSse() {
+      this.$router.push('/interactive_sse'); // 跳转到 flux.vue 页面
     }
   }
 };

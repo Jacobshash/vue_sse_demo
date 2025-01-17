@@ -3,6 +3,7 @@ import App from './App.vue';
 import { createRouter, createWebHistory } from 'vue-router';
 import SimpleSseEmitter from './views/SimpleSseEmitter.vue';
 import SimpleFlux from './views/SimpleFlux.vue';
+import InteractiveSse from './views/InteractiveSse.vue';
 import Home from './views/HomePage.vue'; // 新增主页组件
 
 const routes = [
@@ -19,6 +20,10 @@ const routes = [
     path: '/simple_flux',
     name: 'SimpleFlux',
     component: SimpleFlux,
+  },{
+    path: '/interactive_sse',
+    name: 'InteractiveSse',
+    component: InteractiveSse,
   },
 ];
 
