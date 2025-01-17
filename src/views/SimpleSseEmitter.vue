@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Server-Sent Events Demo</h1>
+    <h1>Server-Sent Events Demo By SimpleSseEmitter</h1>
     <div v-if="events.length">
       <h2>Events:</h2>
       <ul>
@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: 'SimpleSse',
+  name: 'SimpleSseEmitter',
   data() {
     return {
       events: [],

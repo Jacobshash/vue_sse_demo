@@ -2,7 +2,11 @@
   <div>
     <h1>Server-Sent Events Demo , Click button to jump</h1>
     <button @click="goToSimpleSse" class="custom-button">
-      Go to Simple SSE
+      Go to Simple SSE SseEmitter
+    </button>
+
+    <button @click="goToFlux" class="custom-button">
+      Go to Simple SSE Flux
     </button>
   </div>
 </template>
@@ -11,7 +15,10 @@
 export default {
   methods: {
     goToSimpleSse() {
-      this.$router.push('/simple_sse'); // 跳转到 simple_sse.vue 页面
+      this.$router.push('/simple_sse_emitter'); // 跳转到 simple_sse.vue 页面
+    },
+    goToFlux() {
+      this.$router.push('/simple_flux'); // 跳转到 flux.vue 页面
     }
   }
 };
