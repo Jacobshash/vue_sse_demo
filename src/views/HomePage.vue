@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="button-container">
     <h1>Server-Sent Events Demo , Click button to jump</h1>
     <button @click="goToSimpleSse" class="custom-button">
       Go to Simple SSE SseEmitter
@@ -29,6 +29,12 @@ h1 {
   color: #42b983;
 }
 
+.button-container {
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  align-items: center; /* 水平居中 */
+}
+
 .custom-button {
   background-color: #42b983;
   color: white;
@@ -36,5 +42,6 @@ h1 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-bottom: 10px; /* 添加此行以增加间距 */
 }
 </style>
